@@ -166,6 +166,10 @@ h5{
 #checkbox{
     display: grid;
     grid-auto-columns: 0fr 1fr 3fr;
+    width: 50px;
+}
+.status{
+    margin-top: 15px;
 }
 
 @media screen and (min-width: 600px){
@@ -250,8 +254,34 @@ h5{
     .icons{
         border: 0;
     }
-    .earn-form{
-        display: grid;
-        
+    .icons{
+        justify-content: flex-end;
+        position: absolute;
+        right: 70px; top: 750px;
+    }
+    .butt{
+        margin: 0px 20px;
+    }
+    .icons img:nth-child(1){
+        order: 3;
+    }
+    .icons img:nth-child(2){
+        order: 1;
+    }
+    .icons img:nth-child(3){
+        order: 2;
+    }
+    .icons img:nth-child(4){
+        order: 4;
+    }
+    h5,.hours,.container{
+        max-width: 60%;
+        font-size: medium;
+    }
+    .container{
+        border: none;
+    }
+    .hours{
+        margin-top: 10px;
     }
 }
