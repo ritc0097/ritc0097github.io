@@ -1,0 +1,257 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* CSS RESET */
+
+body{
+    font-family:'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #f7f7ff;
+}
+
+.logo{
+    width: 190px;
+    height:auto;
+    margin: 30px;
+}
+
+h1{
+    font-size: 100px;
+    margin: 30px;
+    font-weight: bold;
+}
+h2{
+    font-size:300%;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+}
+h3{
+    font-weight: 100;
+    font-size: 35px;
+    margin: 30px;
+}
+.bg-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+}
+.form-wrap{
+    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 24px;
+    width: 65%;
+    margin: 30px auto;
+    background-color: white;
+}
+
+input{
+    width: 95%;
+    box-sizing: border-box;
+    border: none;
+    background-color: #f7f7f7;
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 20px;
+    margin: 8px;
+}
+
+.drive{
+    background-color: #57eeab;
+    width: 95%;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.earn-form{
+    background-color: #fffd8c;
+    width: 100%;
+    border: none;
+    margin: 0;
+}
+h5{
+    font-size: 30px;
+    border: 30px solid #fffd8c;
+    border-bottom: none;
+    font-weight: bold;
+}
+.hours{
+    border: 30px solid #fffd8c;
+    border-top: none;
+    border-bottom: none;
+    font-size: 25px;
+}
+.calc{
+    background-color: #ff8480;
+    width: 90%;
+    color:white;
+    font-weight: bold;
+    font-size:25px;
+    border: none;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+#hours{
+    padding: 15px;
+    border-radius: 15px;
+    margin-left: 30px;
+    width:17%;
+    background-color: #f7f7f7;
+}
+#city{
+    padding: 15px;
+    border-right: 12px solid #fffd8c;
+    border-radius: 15px;
+    width: 70%;
+    background-color: #f7f7f7;
+}
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 30px solid #fffd8c;
+}
+#facebook{
+    border-radius: 50%;
+}
+#checkbox{
+    display: grid;
+    grid-auto-columns: 0fr 1fr 3fr;
+}
+
+@media screen and (min-width: 600px){
+    .form-wrap{
+        width: 75%;
+    }
+    h2{
+        font-size: 6rem;
+    }
+    .info{
+        margin-left: 50px;
+        font-size: 30px;
+    }
+    .status{
+        text-align: center;
+    }
+    input{
+        padding: 15px;
+    }
+    .bg-image{
+        max-width: 60%;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 20% 30% 50%;
+    }
+    .calc{
+        padding: 15px;
+        margin: 8px;
+    }
+    #hours{
+        margin-left: 30px;
+        width: 90%;
+    }
+    #city{
+        width: 90%;
+        margin-left: 25px;
+    }
+}
+
+@media screen and (min-width: 880px){
+    .logo{
+        margin-left: 90px;
+        margin-top: 5px;
+        width: 100px;
+    }
+    .main-content{
+        display: flex;
+    }
+    h1{
+        font-size: 60px;
+        margin: 0;
+        margin-left: 90px;
+    }
+    h2{
+        font-size: 50px;
+        text-align: left;
+    }
+    h3{
+        margin-left: 90px;
+        font-size: 20px;
+    }
+    .info{
+        margin: 0;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .head, .form-wrap{
+        position: relative;
+        width: 40%;
+    }
+    .bg-image{
+        width: 40%;
+        position: fixed;
+        left: 28%;
+    }
+    .form-wrap{
+        max-width: 30%;
+        margin-right: 50px;
+        margin-top: 0;
+    }
+    .icons{
+        border: 0;
+    }
+    .earn-form{
+        display: grid;
+        
+    }
+}
